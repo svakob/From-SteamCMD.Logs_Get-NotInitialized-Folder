@@ -132,7 +132,7 @@ public:
 #endif // DEBUG == 1
 	}
 
-	void StarScript() {
+	void StartScript() {
 		vector<string> FileNams = GetVectorNameFromDir();
 		vector<string> Ids = ParsIDFormSrring(GetLogFile());
 		bool IsThearErros = false;
@@ -157,5 +157,5 @@ int main()
 {
 	console_cp();
 	LogChecker Script("[PathToDir]", "workshop_log.txt", " [AppID 294100] Download item ");
-	Script.StarScript();
+	Script.StartScript();
 }
